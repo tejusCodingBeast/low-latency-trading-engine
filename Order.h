@@ -7,7 +7,7 @@ class Order: public IOrderCore{
     double price_;
     int quantity;
     bool is_buy_side_;
-    IOrderCore ordercore_;
+    IOrderCore* ordercore_;
     int initial_quantity_;
     int current_quantity_;
 
@@ -15,7 +15,7 @@ class Order: public IOrderCore{
 
     public:
     // Constructors
-    Order(const IOrderCore ordercore, const int order_id, const std::string username, const int security_id);
+    Order(const IOrderCore* ordercore, const int order_id, const std::string username, const int security_id);
     Order(/*ModifyOrder mo*/);
     
     // Member Functions
