@@ -12,8 +12,8 @@ class OrderCore: public IOrderCore{
 
     // Member Functions
     int GetOrderID() const;
-    std::string GetUsername();
-    int GetSecurityID();
+    std::string GetUsername() const;
+    int GetSecurityID() const;
 
 };
 

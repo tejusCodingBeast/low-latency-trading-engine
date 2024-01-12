@@ -92,7 +92,7 @@ Trading_Engine_EXTERNAL_OBJECTS =
 
 Trading_Engine: CMakeFiles/Trading_Engine.dir/main.cpp.o
 Trading_Engine: CMakeFiles/Trading_Engine.dir/build.make
-Trading_Engine: libDog.a
+Trading_Engine: libOrder.a
 Trading_Engine: CMakeFiles/Trading_Engine.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nigelsaurino/Github/low-latency-trading-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Trading_Engine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Trading_Engine.dir/link.txt --verbose=$(VERBOSE)

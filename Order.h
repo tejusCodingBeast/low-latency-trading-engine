@@ -1,11 +1,11 @@
 #ifndef ORDER_H
 #define ORDER_H
 #include "IOrderCore.h"
+#include <string>
 
 class Order: public IOrderCore{
     private:
     double price_;
-    int quantity;
     bool is_buy_side_;
     IOrderCore* ordercore_;
     int initial_quantity_;
@@ -15,15 +15,24 @@ class Order: public IOrderCore{
 
     public:
     // Constructors
-    Order(const IOrderCore* ordercore, const int order_id, const std::string username, const int security_id);
+    Order(IOrderCore* ordercore, const double price, const int quantity, const bool is_buy_side);
     Order(/*ModifyOrder mo*/);
+    ~Order();
     
     // Member Functions
+    void SetPrice(const double price);
+    void SetIsBuySide(const bool is_buy_side);
+    void SetCurrentQuantity(const int quantity);
     int GetOrderID() const;
     std::string GetUsername() const;
     int GetSecurityID() const;
-    // void IncreaseQuantity(const uint quantity_delta);
-    // void DecreaseQuantity(const uint quantity_delta);
+    double GetPrice() const;
+    bool GetIsBuySide() const;
+    int GetInitialQuantity() const;
+    int GetCurrentQuantity() const;
+    void IncreaseQuantity(const uint quantity_delta);
+    void DecreaseQuantity(const uint quantity_delta);
+    std::string ToString() const;
 };
 
 #endif

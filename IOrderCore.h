@@ -3,17 +3,18 @@
 #include <string>
 
 class IOrderCore{
-    private:
+    protected:
     int order_id_;
     std::string username_;
     int security_id_;
 
     public:
     // Constructors
-    IOrderCore(const int order_id, const std::string username, const int security_id){
-        order_id_ = order_id;
-        username_ = username;
-        security_id_ = security_id;
+    IOrderCore(){
+        
+    }
+    IOrderCore(const int order_id, const std::string username, const int security_id): order_id_(order_id), username_(username), security_id_(security_id){
+
     }
     
     // Pure virtual member functions

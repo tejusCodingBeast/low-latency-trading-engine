@@ -511,17 +511,17 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named Dog
+# Target rules for targets named Order
 
 # Build rule for target.
-Dog: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Dog
-.PHONY : Dog
+Order: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Order
+.PHONY : Order
 
 # fast build rule for target.
-Dog/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dog.dir/build.make CMakeFiles/Dog.dir/build
-.PHONY : Dog/fast
+Order/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Order.dir/build.make CMakeFiles/Order.dir/build
+.PHONY : Order/fast
 
 #=============================================================================
 # Target rules for targets named Trading_Engine
@@ -536,29 +536,53 @@ Trading_Engine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trading_Engine.dir/build.make CMakeFiles/Trading_Engine.dir/build
 .PHONY : Trading_Engine/fast
 
-Dog.o: Dog.cpp.o
-.PHONY : Dog.o
+Order.o: Order.cpp.o
+.PHONY : Order.o
 
 # target to build an object file
-Dog.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dog.dir/build.make CMakeFiles/Dog.dir/Dog.cpp.o
-.PHONY : Dog.cpp.o
+Order.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Order.dir/build.make CMakeFiles/Order.dir/Order.cpp.o
+.PHONY : Order.cpp.o
 
-Dog.i: Dog.cpp.i
-.PHONY : Dog.i
+Order.i: Order.cpp.i
+.PHONY : Order.i
 
 # target to preprocess a source file
-Dog.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dog.dir/build.make CMakeFiles/Dog.dir/Dog.cpp.i
-.PHONY : Dog.cpp.i
+Order.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Order.dir/build.make CMakeFiles/Order.dir/Order.cpp.i
+.PHONY : Order.cpp.i
 
-Dog.s: Dog.cpp.s
-.PHONY : Dog.s
+Order.s: Order.cpp.s
+.PHONY : Order.s
 
 # target to generate assembly for a file
-Dog.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dog.dir/build.make CMakeFiles/Dog.dir/Dog.cpp.s
-.PHONY : Dog.cpp.s
+Order.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Order.dir/build.make CMakeFiles/Order.dir/Order.cpp.s
+.PHONY : Order.cpp.s
+
+OrderCore.o: OrderCore.cpp.o
+.PHONY : OrderCore.o
+
+# target to build an object file
+OrderCore.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Order.dir/build.make CMakeFiles/Order.dir/OrderCore.cpp.o
+.PHONY : OrderCore.cpp.o
+
+OrderCore.i: OrderCore.cpp.i
+.PHONY : OrderCore.i
+
+# target to preprocess a source file
+OrderCore.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Order.dir/build.make CMakeFiles/Order.dir/OrderCore.cpp.i
+.PHONY : OrderCore.cpp.i
+
+OrderCore.s: OrderCore.cpp.s
+.PHONY : OrderCore.s
+
+# target to generate assembly for a file
+OrderCore.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Order.dir/build.make CMakeFiles/Order.dir/OrderCore.cpp.s
+.PHONY : OrderCore.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -623,11 +647,14 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... Dog"
+	@echo "... Order"
 	@echo "... Trading_Engine"
-	@echo "... Dog.o"
-	@echo "... Dog.i"
-	@echo "... Dog.s"
+	@echo "... Order.o"
+	@echo "... Order.i"
+	@echo "... Order.s"
+	@echo "... OrderCore.o"
+	@echo "... OrderCore.i"
+	@echo "... OrderCore.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
