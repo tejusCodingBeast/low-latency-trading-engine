@@ -1,7 +1,8 @@
 #include <iostream>
 #include "OrderCore.h"
 
-OrderCore::OrderCore(const int order_id, const std::string username, const int security_id): IOrderCore(order_id, username, security_id){
+OrderCore::OrderCore(const int order_id, const std::string username, const int security_id): 
+IOrderCore(order_id, username, security_id){
 
 }
 

@@ -5,14 +5,12 @@
 class CancelOrder: IOrderCore{
     private:
     IOrderCore* ordercore_;
-    int order_id_;
-    int username_;
-    int security_id_;
 
     public:
     CancelOrder(IOrderCore* ordercore);
+    ~CancelOrder();
     int GetOrderID();
-    int GetUsername();
+    std::string GetUsername();
     int GetSecurityID();
 
 };

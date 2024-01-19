@@ -5,9 +5,9 @@
 
 class Order: public IOrderCore{
     private:
+    IOrderCore* ordercore_;
     double price_;
     bool is_buy_side_;
-    IOrderCore* ordercore_;
     int initial_quantity_;
     int current_quantity_;
 

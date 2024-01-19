@@ -7,9 +7,6 @@
 class ModifyOrder: IOrderCore{
     private:
     IOrderCore* ordercore_;
-    int order_id_;
-    int username_;
-    int security_id_;
     double price_;
     int quantity_;
     bool is_buy_side_;
