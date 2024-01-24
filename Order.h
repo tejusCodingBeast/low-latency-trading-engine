@@ -1,6 +1,7 @@
 #ifndef ORDER_H
 #define ORDER_H
 #include "IOrderCore.h"
+#include "ModifyOrder.h"
 #include <string>
 
 class Order: public IOrderCore{
@@ -16,7 +17,7 @@ class Order: public IOrderCore{
     public:
     // Constructors
     Order(IOrderCore* ordercore, const double price, const int quantity, const bool is_buy_side);
-    Order(/*ModifyOrder mo*/);
+    Order(ModifyOrder modify_order);
     ~Order();
     
     // Member Functions

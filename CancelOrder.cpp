@@ -14,7 +14,7 @@ int CancelOrder::GetOrderID(){
 }
 
 
-int CancelOrder::GetUsername(){
+std::string CancelOrder::GetUsername(){
     return username_;
 }
 

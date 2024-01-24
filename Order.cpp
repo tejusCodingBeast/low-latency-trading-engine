@@ -9,6 +9,15 @@ Order::Order(IOrderCore* ordercore, const double price,
             initial_quantity_(quantity), current_quantity_(quantity),
             IOrderCore(ordercore->GetOrderID(), ordercore->GetUsername(),
             ordercore->GetSecurityID()){
+        
+}
+
+Order::Order(ModifyOrder modify_order): price_(modify_order.GetPrice()), 
+            is_buy_side_(modify_order.GetIsBuySide()), 
+            initial_quantity_(modify_order.GetQuantity()),
+            current_quantity_(modify_order.GetQuantity()),
+            IOrderCore(modify_order.GetOrderID(), 
+            modify_order.GetUsername(), modify_order.GetSecurityID()){
 
 }
 
