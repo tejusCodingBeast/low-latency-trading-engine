@@ -11,10 +11,10 @@ BuildDirectory: /Users/nigelsaurino/Github/low-latency-trading-engine/build
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: Nigels-MacBook-Air.local
+Site: 10-16-254-122.dynapool.wireless.nyu.edu
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Darwin-c++
+BuildName: Darwin-clang++
 
 # Subprojects
 LabelsForSubprojects: 
@@ -63,7 +63,7 @@ UpdateOptions:
 UpdateType: git
 
 # Compiler info
-Compiler: /Library/Developer/CommandLineTools/usr/bin/c++
+Compiler: /usr/bin/clang++
 CompilerVersion: 15.0.0.15000040
 
 # Dynamic analysis (MemCheck)

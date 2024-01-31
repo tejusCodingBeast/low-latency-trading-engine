@@ -27,7 +27,7 @@
 /Users/nigelsaurino/Github/low-latency-trading-engine/build/CMakeFiles/ContinuousMemCheck.dir
 /Users/nigelsaurino/Github/low-latency-trading-engine/build/CMakeFiles/ContinuousSubmit.dir
 /Users/nigelsaurino/Github/low-latency-trading-engine/build/CMakeFiles/Order.dir
-/Users/nigelsaurino/Github/low-latency-trading-engine/build/CMakeFiles/Trading_Engine.dir
+/Users/nigelsaurino/Github/low-latency-trading-engine/build/CMakeFiles/TradingEngine.dir
 /Users/nigelsaurino/Github/low-latency-trading-engine/build/CMakeFiles/package.dir
 /Users/nigelsaurino/Github/low-latency-trading-engine/build/CMakeFiles/package_source.dir
 /Users/nigelsaurino/Github/low-latency-trading-engine/build/CMakeFiles/test.dir

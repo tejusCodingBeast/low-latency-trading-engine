@@ -73,29 +73,29 @@ CMakeFiles/Order.dir/OrderCore.cpp.o: CMakeFiles/Order.dir/flags.make
 CMakeFiles/Order.dir/OrderCore.cpp.o: /Users/nigelsaurino/Github/low-latency-trading-engine/OrderCore.cpp
 CMakeFiles/Order.dir/OrderCore.cpp.o: CMakeFiles/Order.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nigelsaurino/Github/low-latency-trading-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Order.dir/OrderCore.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Order.dir/OrderCore.cpp.o -MF CMakeFiles/Order.dir/OrderCore.cpp.o.d -o CMakeFiles/Order.dir/OrderCore.cpp.o -c /Users/nigelsaurino/Github/low-latency-trading-engine/OrderCore.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Order.dir/OrderCore.cpp.o -MF CMakeFiles/Order.dir/OrderCore.cpp.o.d -o CMakeFiles/Order.dir/OrderCore.cpp.o -c /Users/nigelsaurino/Github/low-latency-trading-engine/OrderCore.cpp
 
 CMakeFiles/Order.dir/OrderCore.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Order.dir/OrderCore.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nigelsaurino/Github/low-latency-trading-engine/OrderCore.cpp > CMakeFiles/Order.dir/OrderCore.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nigelsaurino/Github/low-latency-trading-engine/OrderCore.cpp > CMakeFiles/Order.dir/OrderCore.cpp.i
 
 CMakeFiles/Order.dir/OrderCore.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Order.dir/OrderCore.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nigelsaurino/Github/low-latency-trading-engine/OrderCore.cpp -o CMakeFiles/Order.dir/OrderCore.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nigelsaurino/Github/low-latency-trading-engine/OrderCore.cpp -o CMakeFiles/Order.dir/OrderCore.cpp.s
 
 CMakeFiles/Order.dir/Order.cpp.o: CMakeFiles/Order.dir/flags.make
 CMakeFiles/Order.dir/Order.cpp.o: /Users/nigelsaurino/Github/low-latency-trading-engine/Order.cpp
 CMakeFiles/Order.dir/Order.cpp.o: CMakeFiles/Order.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nigelsaurino/Github/low-latency-trading-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Order.dir/Order.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Order.dir/Order.cpp.o -MF CMakeFiles/Order.dir/Order.cpp.o.d -o CMakeFiles/Order.dir/Order.cpp.o -c /Users/nigelsaurino/Github/low-latency-trading-engine/Order.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Order.dir/Order.cpp.o -MF CMakeFiles/Order.dir/Order.cpp.o.d -o CMakeFiles/Order.dir/Order.cpp.o -c /Users/nigelsaurino/Github/low-latency-trading-engine/Order.cpp
 
 CMakeFiles/Order.dir/Order.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Order.dir/Order.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nigelsaurino/Github/low-latency-trading-engine/Order.cpp > CMakeFiles/Order.dir/Order.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nigelsaurino/Github/low-latency-trading-engine/Order.cpp > CMakeFiles/Order.dir/Order.cpp.i
 
 CMakeFiles/Order.dir/Order.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Order.dir/Order.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nigelsaurino/Github/low-latency-trading-engine/Order.cpp -o CMakeFiles/Order.dir/Order.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nigelsaurino/Github/low-latency-trading-engine/Order.cpp -o CMakeFiles/Order.dir/Order.cpp.s
 
 # Object files for target Order
 Order_OBJECTS = \

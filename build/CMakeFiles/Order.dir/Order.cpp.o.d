@@ -792,4 +792,6 @@ CMakeFiles/Order.dir/Order.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cstdarg \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/sstream \
   /Users/nigelsaurino/Github/low-latency-trading-engine/Order.h \
-  /Users/nigelsaurino/Github/low-latency-trading-engine/IOrderCore.h
+  /Users/nigelsaurino/Github/low-latency-trading-engine/IOrderCore.h \
+  /Users/nigelsaurino/Github/low-latency-trading-engine/ModifyOrder.h \
+  /Users/nigelsaurino/Github/low-latency-trading-engine/CancelOrder.h

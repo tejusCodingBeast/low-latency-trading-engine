@@ -524,17 +524,17 @@ Order/fast:
 .PHONY : Order/fast
 
 #=============================================================================
-# Target rules for targets named Trading_Engine
+# Target rules for targets named TradingEngine
 
 # Build rule for target.
-Trading_Engine: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Trading_Engine
-.PHONY : Trading_Engine
+TradingEngine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TradingEngine
+.PHONY : TradingEngine
 
 # fast build rule for target.
-Trading_Engine/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trading_Engine.dir/build.make CMakeFiles/Trading_Engine.dir/build
-.PHONY : Trading_Engine/fast
+TradingEngine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingEngine.dir/build.make CMakeFiles/TradingEngine.dir/build
+.PHONY : TradingEngine/fast
 
 Order.o: Order.cpp.o
 .PHONY : Order.o
@@ -589,7 +589,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trading_Engine.dir/build.make CMakeFiles/Trading_Engine.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingEngine.dir/build.make CMakeFiles/TradingEngine.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -597,7 +597,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trading_Engine.dir/build.make CMakeFiles/Trading_Engine.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingEngine.dir/build.make CMakeFiles/TradingEngine.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -605,7 +605,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Trading_Engine.dir/build.make CMakeFiles/Trading_Engine.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingEngine.dir/build.make CMakeFiles/TradingEngine.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -648,7 +648,7 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... Order"
-	@echo "... Trading_Engine"
+	@echo "... TradingEngine"
 	@echo "... Order.o"
 	@echo "... Order.i"
 	@echo "... Order.s"
