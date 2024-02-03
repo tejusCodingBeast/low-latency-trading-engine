@@ -21,7 +21,6 @@ class ModifyOrder: IOrderCore{
     bool GetIsBuySide() const;
     CancelOrder& ToCancelOrder();
     Order& ToNewOrder();
-
 };
 
 #endif

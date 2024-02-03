@@ -1,8 +1,10 @@
 #ifndef ORDER_H
 #define ORDER_H
 #include "IOrderCore.h"
-#include "ModifyOrder.h"
 #include <string>
+
+// Forward declaration of ModifyOrder
+class ModifyOrder;
 
 class Order: public IOrderCore{
     private:
@@ -17,7 +19,7 @@ class Order: public IOrderCore{
     public:
     // Constructors
     Order(IOrderCore* ordercore, const double price, const int quantity, const bool is_buy_side);
-    Order(ModifyOrder modify_order);
+    Order(ModifyOrder* modify_order);
     ~Order();
     
     // Member Functions
