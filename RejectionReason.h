@@ -1,4 +1,4 @@
-enum class RejectionReason {
+enum RejectionReason {
     Unknown,
     OrderNotFound,
     InstrumentNotFound,

@@ -1,4 +1,4 @@
-enum class Side{
+enum Side{
     Unknown,
     Bid,
     Ask

@@ -18,5 +18,8 @@ class OrderbookEntry{
     
     public:
     OrderbookEntry();
+    Order* GetCurrentOrder();
+    OrderbookEntry* GetNext();
+    OrderbookEntry* GetPrevious();
 };
 #endif
