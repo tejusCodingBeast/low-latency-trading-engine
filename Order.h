@@ -1,7 +1,10 @@
 #ifndef ORDER_H
 #define ORDER_H
-#include "IOrderCore.h"
 #include <string>
+#include "IOrderCore.h"
+
+using namespace std;
+typedef unsigned int uint;
 
 // Forward declaration of ModifyOrder
 class ModifyOrder;

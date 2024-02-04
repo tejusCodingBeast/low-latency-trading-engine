@@ -5,7 +5,8 @@ include(CTest)
 enable_testing()
 
 # Add the Order class files to your project
-add_library(Order IOrderCore.h OrderCore.cpp Order.cpp ModifyOrder.cpp CancelOrder.cpp Reject.cpp)
+add_library(Order IOrderCore.h OrderCore.cpp Order.cpp ModifyOrder.cpp 
+CancelOrder.cpp Reject.cpp OrderRecord.cpp)
 target_include_directories(Order PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 # Link the Dog library to your main executable

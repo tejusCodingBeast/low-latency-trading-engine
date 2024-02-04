@@ -32,6 +32,7 @@ bool ModifyOrder::GetIsBuySide() const{
     return is_buy_side_;
 }
 
+/*
 CancelOrder& ModifyOrder::ToCancelOrder(){
 
 }
@@ -39,3 +40,4 @@ CancelOrder& ModifyOrder::ToCancelOrder(){
 Order& ModifyOrder::ToNewOrder(){
 
 }
+*/
