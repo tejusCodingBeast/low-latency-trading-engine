@@ -3,10 +3,10 @@
 #include "IOrderCore.h"
 
 class CancelOrder: IOrderCore{
-    private:
+private:
     IOrderCore* ordercore_;
 
-    public:
+public:
     CancelOrder(IOrderCore* ordercore);
     ~CancelOrder();
     int GetOrderID();

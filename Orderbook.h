@@ -9,7 +9,7 @@
 using namespace std;
 
 class Orderbook: RetrievalOrderbook{
-    private:
+private:
     int count_;
     // Security instrument_; // Do I need to create a security class?
     set<Limit> ask_limits_;
@@ -17,7 +17,7 @@ class Orderbook: RetrievalOrderbook{
     map<double, OrderbookEntry> orders_;
     static void AddOrder(Order, Limit, set<Limit>, map<double, OrderbookEntry>);
 
-    public:
+public:
     //Orderbook(Security instrument);
     Orderbook();
     ~Orderbook();

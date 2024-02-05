@@ -9,9 +9,9 @@ using namespace std;
 
 // Pure Virtual
 class OrderEntryOrderbook: ReadOnlyOrderbook{
-    private:
+private:
 
-    public:
+public:
     virtual void AddOrder(Order order) = 0;
     virtual void ChangeOrder(ModifyOrder modify_order) = 0;
     virtual void RemoveOrder(CancelOrder cancel_order) = 0;

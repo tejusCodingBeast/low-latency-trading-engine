@@ -3,10 +3,10 @@
 #include "IOrderCore.h"
 
 class OrderCore: public IOrderCore{
-    private:
+private:
 
 
-    public:
+public:
     // Constructors
     OrderCore(const int order_id, const std::string username, const int security_id);
 

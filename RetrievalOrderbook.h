@@ -8,9 +8,9 @@ using namespace std;
 
 // Pure Virtual
 class RetrievalOrderbook: OrderEntryOrderbook{
-    private:
+private:
 
-    public:
+public:
     virtual list<OrderbookEntry>* GetAskOrders() = 0;
     virtual list<OrderbookEntry>* GetBidOrders() = 0;
 };

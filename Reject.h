@@ -4,9 +4,9 @@
 #include "RejectionReason.h"
 
 class Reject: IOrderCore{
-    private:
+private:
     
-    public:
+public:
     Reject(IOrderCore* ordercore, RejectionReason rejection_reason);
     int GetOrderID();
     std::string GetUsername();

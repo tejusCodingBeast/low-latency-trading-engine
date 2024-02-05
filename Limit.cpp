@@ -2,12 +2,11 @@
 #define LIMIT_CPP
 #include "Limit.h"
 
-Limit::Limit(double price){
-    price_ = price;
-    head_ = nullptr;
-    tail_ = nullptr;
+Limit::Limit(double price): price_(price), head_(nullptr), tail_(nullptr){
+
 }
 
+/* Getters */
 uint Limit::GetLevelOrderCount(){
     uint order_count;
     while(head_ != nullptr){
@@ -57,6 +56,28 @@ list<OrderRecord>* Limit::GetLevelOrderRecords(){
     return limit_orders;
 }
 
+double Limit::GetPrice(){
+    return price_;
+}
+
+OrderbookEntry* Limit::GetTail(){
+    return tail_;
+}
+
+OrderbookEntry* Limit::GetHead(){
+    return head_;
+}
+
+/* Setters */
+void Limit::SetHead(OrderbookEntry* new_head){
+    head_ = new_head;
+}
+
+void Limit::SetTail(OrderbookEntry* new_tail){
+    tail_ = new_tail;
+}
+
+/* Member functions*/
 bool Limit::IsEmpty(){
     if(head_ == nullptr){
         return true; 

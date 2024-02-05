@@ -6,11 +6,11 @@ using namespace std;
 
 // Pure Virtual
 class OrderbookSpread{
-    private:
+private:
     optional<double> bid_;
     optional<double> ask_;
 
-    public:
+public:
     OrderbookSpread(double bid, double ask);
     optional<double> Spread();
 };

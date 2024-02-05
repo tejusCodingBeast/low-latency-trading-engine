@@ -3,9 +3,9 @@
 #include "NewOrderStatus.h"
 
 class ModifyOrderStatus: NewOrderStatus{
-    private:
+private:
 
-    public:
+public:
     ModifyOrderStatus();
     ~ModifyOrderStatus();
 

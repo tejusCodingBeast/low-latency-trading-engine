@@ -6,10 +6,10 @@ using namespace std;
 
 // Pure Virtual
 class ReadOnlyOrderbook{
-    private:
+private:
     int count_;
 
-    public:
+public:
     virtual bool ContainsOrder(double order_id) = 0;
     virtual OrderbookSpread* GetSpread() = 0;
 };

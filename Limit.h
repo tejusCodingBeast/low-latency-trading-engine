@@ -9,12 +9,12 @@ using namespace std;
 typedef unsigned int uint;
 
 class Limit{
-    private:
+private:
     double price_;
     OrderbookEntry* head_;
     OrderbookEntry* tail_;
 
-    public:
+public:
     Limit(double price);
     OrderbookEntry* GetHead();
     bool IsEmpty();
@@ -25,6 +25,7 @@ class Limit{
     uint GetLevelOrderQuantity();
     list<OrderRecord>* GetLevelOrderRecords();
     double GetPrice();
+    OrderbookEntry* GetHead();
     OrderbookEntry* GetTail();
     
     // Setters

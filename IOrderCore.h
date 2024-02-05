@@ -3,12 +3,12 @@
 #include <string>
 
 class IOrderCore{
-    protected:
+protected:
     int order_id_;
     std::string username_;
     int security_id_;
 
-    public:
+public:
     // Constructors
     IOrderCore(){
         

@@ -5,13 +5,13 @@
 #include "Order.h"
 
 class ModifyOrder: IOrderCore{
-    private:
+private:
     IOrderCore* ordercore_;
     double price_;
     int quantity_;
     bool is_buy_side_;
     
-    public:
+public:
     ModifyOrder(IOrderCore* ordercore, double modify_price, int modify_quantity, bool is_buy_side);
     int GetOrderID() const;
     std::string GetUsername() const;

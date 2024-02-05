@@ -4,9 +4,9 @@
 #include "Reject.h"
 
 class RejectCreator{
-    private:
+private:
 
-    public:
+public:
     RejectCreator();
     ~RejectCreator();
     Reject& GenerateOrderCoreReject(IOrderCore* orderCore, RejectionReason rejection_reason);

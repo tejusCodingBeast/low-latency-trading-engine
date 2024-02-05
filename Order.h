@@ -10,16 +10,16 @@ typedef unsigned int uint;
 class ModifyOrder;
 
 class Order: public IOrderCore{
-    private:
+private:
     IOrderCore* ordercore_;
     double price_;
     bool is_buy_side_;
     int initial_quantity_;
     int current_quantity_;
 
-    protected:
+protected:
 
-    public:
+public:
     // Constructors
     Order(IOrderCore* ordercore, const double price, const int quantity, const bool is_buy_side);
     Order(ModifyOrder* modify_order);

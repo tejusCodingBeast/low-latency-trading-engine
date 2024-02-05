@@ -6,7 +6,7 @@ using namespace std;
 
 // Read-only representation of an order
 class OrderRecord{
-    private:
+private:
     double order_id_;
     double quantity_;
     double price_;
@@ -15,7 +15,7 @@ class OrderRecord{
     int security_id_;
     int theoretical_queue_position_;
     
-    public:
+public:
     OrderRecord(double order_id, int quantity, double price, 
     bool is_buy_side, string username, int security_id, int theoretical_queue_position);
 };

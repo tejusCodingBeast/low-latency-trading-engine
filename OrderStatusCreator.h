@@ -13,9 +13,9 @@ the Generate functions for each order status type
 
 
 class OrderStatusCreator{
-    private:
+private:
 
-    public:
+public:
     OrderStatusCreator();
     ~OrderStatusCreator();
     CancelOrderStatus& GenerateCancelOrderStatus(CancelOrder cancel_order);

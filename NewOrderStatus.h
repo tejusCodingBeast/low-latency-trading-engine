@@ -2,9 +2,9 @@
 #define NEWORDERSTATUS_H
 
 class NewOrderStatus{
-    private:
+private:
 
-    public:
+public:
     NewOrderStatus();
     ~NewOrderStatus();
 };
