@@ -16,11 +16,13 @@ class Limit{
 
     public:
     Limit(double price);
+    OrderbookEntry* GetHead();
     bool IsEmpty();
-    Side Side();
     uint GetLevelOrderCount();
     uint GetLevelOrderQuantity();
-    list<OrderRecord> GetLevelOrderRecords();
-
+    list<OrderRecord>* GetLevelOrderRecords();
+    double GetPrice();
+    OrderbookEntry* GetTail();
+    Side Side();
 };
 #endif

@@ -19,7 +19,9 @@ class OrderbookEntry{
     public:
     OrderbookEntry();
     Order* GetCurrentOrder();
+    tm* GetCreationTime();
     OrderbookEntry* GetNext();
+    Limit* GetParentLimit();
     OrderbookEntry* GetPrevious();
 };
 #endif
