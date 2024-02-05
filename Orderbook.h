@@ -20,6 +20,7 @@ class Orderbook: RetrievalOrderbook{
     public:
     //Orderbook(Security instrument);
     Orderbook();
+    ~Orderbook();
     bool ContainsOrder(double order_id);
     void AddOrder(Order order);
     void ChangeOrder(ModifyOrder modify_order);

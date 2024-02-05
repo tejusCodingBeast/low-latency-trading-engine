@@ -12,10 +12,10 @@ class OrderEntryOrderbook: ReadOnlyOrderbook{
     private:
 
     public:
-    void AddOrder(Order order);
-    void ChangeOrder(ModifyOrder modify_order);
-    void RemoveOrder(CancelOrder cancel_order);
-    void CancelAll();
+    virtual void AddOrder(Order order) = 0;
+    virtual void ChangeOrder(ModifyOrder modify_order) = 0;
+    virtual void RemoveOrder(CancelOrder cancel_order) = 0;
+    virtual void CancelAll() = 0;
 };
 
 #endif

@@ -11,7 +11,7 @@ class RetrievalOrderbook: OrderEntryOrderbook{
     private:
 
     public:
-    list<OrderbookEntry>* GetAskOrders();
-    list<OrderbookEntry>* GetBidOrders();
+    virtual list<OrderbookEntry>* GetAskOrders() = 0;
+    virtual list<OrderbookEntry>* GetBidOrders() = 0;
 };
 #endif

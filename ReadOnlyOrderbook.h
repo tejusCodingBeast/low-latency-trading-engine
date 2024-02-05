@@ -10,7 +10,6 @@ class ReadOnlyOrderbook{
     int count_;
 
     public:
-    ReadOnlyOrderbook();
     virtual bool ContainsOrder(double order_id) = 0;
     virtual OrderbookSpread* GetSpread() = 0;
 };

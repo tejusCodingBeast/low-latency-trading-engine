@@ -18,11 +18,17 @@ class Limit{
     Limit(double price);
     OrderbookEntry* GetHead();
     bool IsEmpty();
+    Side Side();
+
+    // Getters 
     uint GetLevelOrderCount();
     uint GetLevelOrderQuantity();
     list<OrderRecord>* GetLevelOrderRecords();
     double GetPrice();
     OrderbookEntry* GetTail();
-    Side Side();
+    
+    // Setters
+    void SetHead(OrderbookEntry* new_head);
+    void SetTail(OrderbookEntry* new_tail);
 };
 #endif
