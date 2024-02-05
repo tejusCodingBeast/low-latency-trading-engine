@@ -12,6 +12,7 @@ private:
 
 public:
     OrderbookSpread(double bid, double ask);
+    ~OrderbookSpread();
     optional<double> Spread();
 };
 
